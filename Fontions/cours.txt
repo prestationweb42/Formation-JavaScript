@@ -1,0 +1,11 @@
+L'avantage des fonctions est :
+- d'éviter de répéter du code pour l'utiliser à plusieurs endroits
+- maintenabilité du code si besoin de modifier les paramètres
+
+Le plus souvent les fonctions ont des paramètres
+- Les paramètres sont automatiquement déclarés comme des variables modifiables
+- On peut passer autant de paramètres qu'on le veut
+
+Les variables GLOBALES - LOCALES
+- une variable globale est définie à la racine du projet et sera accessible partout dans notre code
+- une variable globale peut être utlisée quand on ne connait pas la valeur exacte qu'elle pourrait prendre

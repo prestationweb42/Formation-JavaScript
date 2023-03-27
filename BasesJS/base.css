@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Alkatra", cursive;
+}
+:root {
+    /* Color variables */
+    --main-blue: #0065fc;
+    --lite-blue: #deebff;
+    --lite-gray: #f2f2f2;
+    --main-black: #000;
+    --main-white: #fff;
+
+    /* FONT */
+    --main-font: "Raleway", sans-serif;
+
+    /* Text color variables */
+    --color-primary: var(--main-black);
+    --color-secondary: var(--main-white);
+}
+.base__container {
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+.base__container h1,
+h2 {
+    text-align: center;
+}
+.base__container h1 {
+    font-size: 3em;
+    padding: 30px 0;
+    color: var(--main-blue);
+    background-color: rgb(240, 140, 11);
+}
+.base__container h2 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+.base__container a {
+    font-size: 2em;
+}
+.base__container p {
+    font-size: 2em;
+}
