@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="app.js" defer></script>
+        <script src="test-api.js" defer></script>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Bienvenue dans la Pokedex</h1>
+        <!-- Form -->
+        <form class="search-poke">
+            <label for="search">Chercher un Pokemon</label>
+            <input type="text" id="search" name="search" />
+            <button type="submit">Rechercher</button>
+            <!-- loader -->
+            <div class="loader">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </form>
+        <!-- div contain -->
+        <div class="container">
+            <ul class="list-poke"></ul>
+        </div>
+    </body>
+</html>
