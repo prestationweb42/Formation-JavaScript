@@ -12,7 +12,7 @@
 }
 :root {
     /* Color variables */
-    --main-red: #f15c2a;
+    --main-red: #dc143c;
     --main-blue: #1774bb;
     --bleu-nuit: #0f056b;
     --lite-blue: #deebff;
@@ -72,4 +72,7 @@
     font-size: 2em;
     text-decoration: underline;
     color: var(--main-red);
+}
+.list__link:hover {
+    text-decoration: none;
 }
