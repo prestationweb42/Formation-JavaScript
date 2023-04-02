@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.btnChangeCouleur {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: blanchedalmond;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnBleu {
+    background-color: rgb(0, 47, 128);
+}
+.btnVert {
+    background-color: rgb(0, 128, 41);
+}
+.section {
+    width: 100%;
+    min-height: 40vh;
+    background-color: aliceblue;
+    transition: all ease-in-out 300ms;
+}
+.section h1{
+    text-align: center;
+}
+
+.bgColorBleu {
+    width: 50%;
+    margin: 0 auto;
+    background-color: aqua;
+    transition: all ease-in-out 300ms;
+}
+.bgColorGreen{
+    width: 60%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(27, 233, 27);
+    transition: all ease-in-out 300ms;
+}
