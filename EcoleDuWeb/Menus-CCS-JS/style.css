@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Alkatra", cursive;
+}
+:root {
+    /* Color variables */
+    --main-red: #dc143c;
+    --main-blue: #1774bb;
+    --bleu-nuit: #0f056b;
+    --lite-blue: #deebff;
+    --lite-gray: #f2f2f2;
+    --main-black: #000;
+    --main-white: #fff;
+
+    /* FONT */
+    --main-font: "Raleway", sans-serif;
+
+    /* Text color variables */
+    --color-primary: var(--main-black);
+    --color-secondary: var(--main-white);
+}
+
+/* Setting Main*/
+.main__container {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url(../../../img/bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 80%;
+}
+
+/* Setting Section Container*/
+.section__container {
+    width: 100%;
+    height: 100%;
+}
+.section__container h2{
+    text-align: center;
+    font-size: 3em;
+    color: var(--main-blue);
+}
+
+/* Setting Header*/
+.header__container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__container h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 3.5em;
+    color: var(--main-red);
+}
+.header__container img {
+    width: 300px;
+    height: auto;
+}
+
+/* Setting List Container*/
+.list__container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.list__item {
+    margin-right: 20px;
+}
+
+.list__link {
+    font-size: 2em;
+    text-decoration: underline;
+    color: var(--main-blue);
+}
+.list__link:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,134 @@
+/* Font Gotu */
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+/* reset CSS */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Setting Body */
+body {
+    font-family: "Gotu", sans-serif;
+    background-color: #555;
+}
+
+/* Setting Nav */
+nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #f1f1f1;
+}
+
+/* Setting liste-nav */
+.liste-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all ease-in-out 300ms;
+}
+
+/* Setting nav-item */
+.nav-item {
+    padding: 3px 10px 0px 10px;
+}
+
+/* Setting nav-link */
+.nav-link {
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    margin: -3px auto 0 auto;
+    transition: all ease-in-out 300ms;
+}
+.nav-link:hover::after {
+    width: 100%;
+    transition: all ease-in-out 300ms;
+}
+
+/* Setting BTN Menu*/
+.btn-responsive-menu {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    /* background-color: #000; */
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .btn-responsive-menu {
+        display: block;
+    }
+    .nav-link::after {
+        display: none;
+    }
+    .liste-nav {
+        top: -250px;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #f1f1f1;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+    .nav-link {
+        width: 100%;
+    }
+    .liste-nav.active-menu {
+        top: 0px;
+    }
+}
+
+/* Setting ligne */
+.lignes {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    transition: all ease-in-out 500ms;
+}
+.lignes:nth-child(1) {
+    top: 0px;
+}
+.lignes:nth-child(2) {
+    top: 10px;
+}
+.lignes:nth-child(1) {
+    top: 20px;
+}
+
+/* Setting ligne + animation*/
+.btn-responsive-menu.active .lignes:nth-child(1) {
+    top: 12px;
+    transform: rotate(135deg);
+}
+.btn-responsive-menu.active .lignes:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.btn-responsive-menu.active .lignes:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+}
