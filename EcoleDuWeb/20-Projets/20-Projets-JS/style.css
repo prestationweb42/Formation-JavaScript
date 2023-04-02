@@ -39,6 +39,17 @@
     background-position: 50% 80%;
 }
 
+/* Setting Section Container*/
+.section__container {
+    width: 100%;
+    height: 100%;
+}
+.section__container h2{
+    text-align: center;
+    font-size: 3em;
+    color: var(--main-blue);
+}
+
 /* Setting Header*/
 .header__container {
     width: 100%;
