@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Strong Password</title>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="heading">Votre nouveau mot de passe</h2>
+            <!--  -->
+            <div class="password-container">
+                <p class="password-content"></p>
+                <button class="copy-btn">
+                    <img src="ressources/copy.svg" alt="icône copier" />
+                </button>
+            </div>
+            <!-- div range -->
+            <div class="range-group">
+                <label for="range"></label>
+                <input type="range" min="4" max="20" value="10" />
+            </div>
+            <!--  -->
+            <div class="checkboxes-container">
+                <!-- lowerCase Chars -->
+                <div class="input-group">
+                    <input
+                        type="checkbox"
+                        name="lowercaseChars"
+                        id="lowercaseChars"
+                        checked
+                    />
+                    <label for="lowercaseChars"
+                        >Contient des caractères en minuscules</label
+                    >
+                </div>
+                <!-- upperCase Chars -->
+                <div class="input-group">
+                    <input
+                        type="checkbox"
+                        name="uppercaseChars"
+                        id="uppercaseChars"
+                        checked
+                    />
+                    <label for="uppercaseChars"
+                        >Contient des caractères en majuscules</label
+                    >
+                </div>
+                <!-- numbers Chars -->
+                <div class="input-group">
+                    <input
+                        type="checkbox"
+                        name="numbers"
+                        id="numbers"
+                        checked
+                    />
+                    <label for="numbers">Contient des nombres</label>
+                </div>
+                <!-- symbols Chars -->
+                <div class="input-group">
+                    <input
+                        type="checkbox"
+                        name="symbols"
+                        id="symbols"
+                        checked
+                    />
+                    <label for="symbols">Contient des symboles spéciaux</label>
+                </div>
+            </div>
+            <button class="generate-password-btn">Générer</button>
+            <p class="error-msg"></p>
+        </div>
+    </body>
+</html>
