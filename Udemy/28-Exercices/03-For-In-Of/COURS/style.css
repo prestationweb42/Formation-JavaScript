@@ -1,0 +1,36 @@
+.main_container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.main_container h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.memory_content,
+.resultFor,
+.resultForIn,
+.resultForInObj,
+.resultForOf {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.memory_content h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.memory_content h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.resultFor h3,
+.resultForIn h3,
+.resultForInObj h3,
+.resultForOf h3 {
+    text-align: center;
+    font-size: 30px;
+}
