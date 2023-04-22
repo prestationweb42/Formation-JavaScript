@@ -2,6 +2,8 @@
 
 # Maitrisez JavaScript de ES6 à ES9
 
+# 28 Exercices + Projets + Cours - Ecole du Web
+
 ## Partie 1 - Let & Const
 
 -   01 Let - Const
