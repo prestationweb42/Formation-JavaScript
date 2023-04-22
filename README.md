@@ -1,8 +1,27 @@
+# Exercices + Projets + Cours - Ecole du Web
+
+## 20 Projets JS
+
+-   20 Projets
+    -   1 Quizz
+    -   2 IMC
+    -   3 Pokedex
+    -   4 WikiApp
+    -   7 Pomodoro
+    -   12 Générateurs de mot de passe
+
+## Divers
+
+-   Divers
+
+    -   Jeu du Lido
+    -   OnOff
+    -   Menus CSS JS
+    -   MouseEyes
+
 # 28 Exercices + Cours - Udemy
 
 ## Maitrisez JavaScript de ES6 à ES9
-
-# Exercices + Projets + Cours - Ecole du Web
 
 ## Partie 1 - Let & Const
 
