@@ -1,18 +1,20 @@
-const notes = [5,10,15,20];
-
-function calculMoyenne(){
-    let resultat = 0;
-    for(let valeur of notes){
-        resultat += valeur;
-    }
-    return (resultat /= notes.length);
+const resultat = document.querySelector(".resultat");
+const notes = [5, 10, 15, 20];
+// for
+let toto = 0;
+for (let i = 0; i < notes.length; i++) {
+    toto += notes[i];
 }
-function calculMoyenne2(){
-    let resultat = 0;
-    for(let indice in notes){
-        resultat += notes[indice];
-    }
-    return (resultat /= notes.length);
+console.log(toto);
+// for in
+let tata = 0;
+for (const key in notes) {
+    tata += notes[key];
 }
-console.log(`La moyenne est de ${calculMoyenne()}`);
-console.log(`La moyenne est de ${calculMoyenne2()}`);
+console.log(tata);
+//for of
+let titi = 0;
+for (const value of notes) {
+    titi += value;
+}
+console.log(titi);
