@@ -28,6 +28,9 @@
 -   04 Décomposition - Destructuring
     -   Cours
     -   Exo 9
+
+## Partie 5 - Les fonctions sur les tableaux
+
 -   05 Les fonctions sur les tableaux
     -   Cours
     -   Exercice 10
@@ -35,33 +38,71 @@
     -   Exercice 12
     -   Exercice 13
     -   Exercice 14
+
+## Partie 6 - Paramètres par défaut de fonction
+
 -   06 Paramètres par défaut de fonction
     -   Cours
     -   Exo 15
+
+## Partie 7 - Opérateur Spread & Rest
+
 -   07 Opérateur Spread & Rest
     -   Cours
     -   Exo 16
     -   Exo 17
     -   Exo 18
 
-## Partie 2 - Moyen - 7 Exercices:
+## Partie 8 - Fonctions fléchées
 
--   Tableaux
-    -   Exo 1 : Tableau à 2 dimensions - Table de multiplication
-    -   Exo 2 : Fichier de fonctions et tableaux + Affichage + Sum + Moyenne
-    -   Exo 3 : Tableaux Associatifs + BTN + Méthode GET
-    -   Exo 4 : Class POO Objet + BTN + Méthode GET
-    -   Exo 5 : Class POO Private Getter + Méthode POST
-    -   Exo 6 : Class POO Private Getter + Attribut Static
+-   08 Fonctions fléchées
+    -   Cours
+    -   Exo 19a
+    -   Exo 19b
 
-## Comprehension Check
+## Partie 9 - Fonctions de rappel
 
-You will be employer-ready if you can answer the following questions:
+-   09 Fonctions de rappel
+    -   Cours
+    -   Exo 20
+    -   Exo 21
+
+## Partie 10 - Fonctions asynchrones
+
+-   10 Fonctions asynchrones
+    -   Cours synchrone VS asynchrone
+    -   Cours Les promesses
+    -   Exo 22
+    -   Exo 23
+
+## Partie 11 - Import & Export
+
+-   10 Fonctions asynchrones
+    -   Cours
+    -   Exo 24
+
+## Partie 11 - Import & Export
+
+-   10 Fonctions asynchrones
+    -   Cours
+    -   Exo 24
+
+## Partie 12 - Les objets en JavaScript
+
+-   10 Fonctions asynchrones
+    -   Cours
+    -   Exo 25
+
+## Partie 13 - Les Classes et la POO
+
+-   13 Les Classes et la POO
+    -   Cours
+    -   Exo 26
+    -   Exo 27
+    -   Exo 28
 
 1. What does it mean to be a full-stack web developer?
 2. What is the relationship between HTML and CSS?
-
-## Helpful Links
 
 -   [Version Control](https://en.wikipedia.org/wiki/Version_control)
 -   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -71,4 +112,4 @@ You will be employer-ready if you can answer the following questions:
 
 ---
 
-© 2023 EXERCICES PHP.
+© 2023 EXERCICES JAVASCRIPT
