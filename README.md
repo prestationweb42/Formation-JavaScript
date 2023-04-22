@@ -1,8 +1,8 @@
-# 28 Exercices + Cours
+# 28 Exercices + Cours - Udemy
 
-# Maitrisez JavaScript de ES6 à ES9
+## Maitrisez JavaScript de ES6 à ES9
 
-# 28 Exercices + Projets + Cours - Ecole du Web
+# Exercices + Projets + Cours - Ecole du Web
 
 ## Partie 1 - Let & Const
 
