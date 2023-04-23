@@ -40,7 +40,10 @@
 ## Partie 3 - Les Boucles for..in & for..of
 
 -   03 Les Boucles for..in - for..of
-    -   Exo 6
+    -   Cours
+    -   Exo 6a - som
+    -   Exo 6b - moy
+    -   Exo 6 - Fonction calcul moy
     -   Exo 7
     -   Exo 8
 
