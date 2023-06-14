@@ -1,0 +1,21 @@
+L'avantage des fonctions est :
+- d'éviter de répéter du code pour l'utiliser à plusieurs endroits
+- maintenabilité du code si besoin de modifier les paramètres
+
+Le plus souvent les fonctions ont des paramètres
+- Les paramètres sont automatiquement déclarés comme des variables modifiables
+- On peut passer autant de paramètres qu'on le veut
+
+Les variables GLOBALES - LOCALES
+- une variable globale est définie à la racine du projet et sera accessible partout dans notre code
+- une variable globale peut être utlisée quand on ne connait pas la valeur exacte qu'elle pourrait prendre
+
+Définitions d'un tableau :
+Les tableaux sont des variables permettant de stocker plusieurs éléments en même temps comme des nombres, 
+des chaînes de caractères, etc. 
+Les tableaux stockent le plus souvent un seul type d'éléments, 
+mais les langages comme JavaScript et Python autorisent le mélange de plusieurs types dans un même tableau.
+
+Les fonctions sur les tableaux
+- voir le cours en PDF
+
