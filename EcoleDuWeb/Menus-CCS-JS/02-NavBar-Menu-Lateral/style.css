@@ -1,0 +1,144 @@
+/* Font Gotu */
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+/* reset CSS */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Setting Body */
+body {
+    font-family: "Gotu", sans-serif;
+    background-color: #555;
+}
+
+/* Setting Nav */
+.nav-left {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    border-right: 1px dashed #515151;
+    transition: all 500ms ease-in;
+}
+
+/* Setting liste-nav */
+.liste-nav {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    transition: all ease-in-out 300ms;
+}
+
+/* Setting nav-item */
+.nav-item {
+    padding: 3px 10px 0px 10px;
+    margin: 20px 0;
+}
+
+/* Setting nav-link */
+.nav-link {
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    margin: -3px auto 0 auto;
+    transition: all ease-in-out 300ms;
+}
+.nav-link:hover::after {
+    width: 100%;
+    transition: all ease-in-out 300ms;
+}
+
+/* Setting BTN Menu*/
+.btn-responsive-menu {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 50px;
+    left: 50px;
+    display: none;
+    cursor: pointer;
+    z-index: 5;
+}
+/* Setting ligne */
+.ligne {
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #000;
+    position: absolute;
+    transition: all ease-in-out 500ms;
+    z-index: 10;
+}
+.ligne:nth-child(1) {
+    top: 0px;
+}
+.ligne:nth-child(2) {
+    top: 10px;
+}
+.ligne:nth-child(3) {
+    top: 20px;
+}
+/* Setting ligne + animation*/
+.btn-responsive-menu.active .ligne:nth-child(1) {
+    top: 12px;
+    transform: rotate(135deg);
+}
+.btn-responsive-menu.active .ligne:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.btn-responsive-menu.active .ligne:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+}
+/* Media query */
+@media screen and (max-width: 1024px) {
+    .nav-left {
+        left: -300px;
+    }
+    .btn-responsive-menu {
+        display: block;
+    }
+    .nav-link::after {
+        display: none;
+    }
+    .liste-nav {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #f1f1f1;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+    .nav-link {
+        width: 100%;
+    }
+    .liste-nav.active-menu {
+        left: 300px;
+    }
+}
