@@ -46,21 +46,26 @@ h2 {
     font-size: 2em;
     padding: 20px 0;
 }
-.base__container a {
+.base__container .link_back{
     font-size: 2em;
+    color: var(--bleu-nuit);
+
+}
+/* Seting List Ul Li a*/
+.base__container .list__item a {
+    font-size: 1.5em;
     color: var(--main-red);
     text-decoration: underline;
 }
 .base__container h3 {
     font-size: 2em;
-    text-decoration: underline;
     color: var(--main-blue);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin-top: 20px;
 }
 .base__container p {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .definition {
     line-height: 1.5;
