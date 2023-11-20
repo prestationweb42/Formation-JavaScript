@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
 }
-.section__container h2{
+.section__container h2 {
     text-align: center;
     font-size: 3em;
     color: var(--main-blue);
@@ -82,6 +82,8 @@
 .list__link {
     font-size: 1.7em;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
     color: var(--main-blue);
 }
 .list__link:hover {
