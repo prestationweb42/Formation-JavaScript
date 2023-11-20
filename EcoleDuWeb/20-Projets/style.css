@@ -80,7 +80,7 @@
 }
 
 .list__link {
-    font-size: 2em;
+    font-size: 1.7em;
     text-decoration: underline;
     color: var(--main-blue);
 }
