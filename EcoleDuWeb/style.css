@@ -72,6 +72,8 @@
     font-size: 2em;
     text-decoration: underline;
     color: var(--main-blue);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 .list__link:hover {
     text-decoration: none;
