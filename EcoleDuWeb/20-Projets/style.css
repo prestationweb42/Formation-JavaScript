@@ -35,7 +35,7 @@
     margin: 0 auto;
     background: url(../../../img/bg.webp);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
     background-position: 50% 80%;
 }
 
