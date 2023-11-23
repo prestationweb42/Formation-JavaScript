@@ -1,0 +1,54 @@
+/* Responsive CSS */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 0;
+    }
+    .slider-container {
+        margin: 7% auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slider-container {
+        margin: 9% auto;
+    }
+}
+@media screen and (max-width: 425px) {
+    .slider-container {
+        width: 90%;
+        height: auto;
+        margin: 22% auto;
+    }
+    .slider-container .direction-btn {
+        top: 60%;
+    }
+    .content {
+        margin-bottom: 20px;
+        color: #dfdfdf;
+        text-align: center;
+    }
+    .content img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .content {
+        margin-bottom: 0;
+    }
+    .content img {
+        width: 200px;
+        height: 200px;
+    }
+    .content h2 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .content p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .content button {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
