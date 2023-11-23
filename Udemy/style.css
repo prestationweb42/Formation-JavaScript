@@ -71,6 +71,8 @@
 .list__link {
     font-size: 2em;
     text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px ;
     color: var(--bleu-nuite);
 }
 .list__link:hover {
