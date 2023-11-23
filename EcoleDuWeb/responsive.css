@@ -1,0 +1,82 @@
+/* Responsive 20 Projets*/
+@media screen and (max-width: 1024px) {
+    .main__container {
+        background-size: 80%;
+        background-position: 50% 75%;
+    }
+    .header__container {
+        justify-content: space-evenly;
+    }
+    .header__container h2 {
+        font-size: 2em;
+    }
+    .header__container a {
+        width: 200px;
+    }
+    .header__container img {
+        width: 100%;
+    }
+    .header__container h1 {
+        font-size: 2em;
+    }
+    /* list UL*/
+    .list__container {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .list__container .list__item {
+        margin-right: 0;
+    }
+    .list__container .list__item a {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main__container {
+        background: none;
+    }
+    .header__container h1 {
+        font-size: 1.8em;
+    }
+    .list__container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section__container {
+        height: 100vh;
+    }
+    .header__container {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header__container h1 {
+        font-size: 1.2em;
+    }
+    .list__container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 320px) {
+    .list__container .list__item a {
+        font-size: 1.4em;
+    }
+}
