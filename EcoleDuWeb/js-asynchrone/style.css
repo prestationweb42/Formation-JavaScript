@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Alkatra", cursive;
+}
+:root {
+    /* Color variables */
+    --main-red: #dc143c;
+    --main-blue: #1774bb;
+    --bleu-nuit: #0f056b;
+    --lite-blue: #deebff;
+    --lite-gray: #f2f2f2;
+    --main-black: #000;
+    --main-white: #fff;
+
+    /* FONT */
+    --main-font: "Raleway", sans-serif;
+
+    /* Text color variables */
+    --color-primary: var(--main-black);
+    --color-secondary: var(--main-white);
+}
+
+/* Setting Main*/
+.main__container {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url(../img/bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 80%;
+}
+
+/* Setting Header*/
+.header__container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__container h1 {
+    text-align: center;
+    font-size: 3.5em;
+    color: var(--main-red);
+}
+.header__container h2 {
+    font-size: 3em;
+    text-align: center;
+    color: var(--main-red);
+    
+}
+
+/* Setting List Container*/
+.list__container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list__item .list__link {
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: var(--main-blue);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+.list__link:hover {
+    text-decoration: none;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 1024px) {
+    .main__container {
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 50% 75%;
+    }
+    .list__item .list__link {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main__container {
+        background-size: 80%;
+        background-position: 50% 65%;
+    }
+    .header__container {
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header__container h1 {
+        font-size: 2.6em;
+    }
+    .header__container img {
+        width: 250px;
+        height: auto;
+    }
+    .list__container {
+        height: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main__container {
+        background-position: 50% 55%;
+    }
+    .header__container {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .header__container h1 {
+        font-size: 2em;
+    }
+    .header__container img {
+        width: 200px;
+        height: auto;
+    }
+    .list__container {
+        height: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .list__item .list__link {
+        font-size: 1.5em;
+    }
+}
