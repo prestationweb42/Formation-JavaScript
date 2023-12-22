@@ -6,7 +6,7 @@
 // Construction de la requete
 function getCatImg(url, callback) {
     const xhr = new XMLHttpRequest();
-    console.log(xhr);
+    // console.log(xhr);
     // Initialisation d'un appel
     xhr.open("GET", url, true);
     // Type de reponse
@@ -24,13 +24,15 @@ function getCatImg(url, callback) {
 const btn = document.querySelector("button");
 btn.addEventListener("click", e => {
     e.preventDefault();
-    // Requete
-    getCatImg("https://api.thecatapi.com/v1/images/search", data => {
-        console.log(data);
-        const contentImg = document.querySelector(".contentImg");
-        const img = document.createElement("img");
-        img.src = data[0].url;
-        // contentImg.appendChild(img);
-        contentImg.innerHTML = '<img src="' + img.src + '">';
-    });
+    setInterval(() => {
+        // Requete
+        getCatImg("https://api.thecatapi.com/v1/images/search", data => {
+            // console.log(data);
+            const contentImg = document.querySelector(".contentImg");
+            const img = document.createElement("img");
+            img.src = data[0].url;
+            // contentImg.appendChild(img);
+            contentImg.innerHTML = '<img src="' + img.src + '">';
+        });
+    }, 4000);
 });
