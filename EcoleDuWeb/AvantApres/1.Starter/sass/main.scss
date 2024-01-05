@@ -1,0 +1,101 @@
+/* Setting CSS with SASS */
+/* Import Partials */
+// @import "reset";
+@use "reset";
+// @import "font";
+@use "typo" as typo;
+
+/* Setting Body */
+body {
+    font-family: DM sans, Helvetica, sans-serif;
+    background-color: #111;
+    padding-block-start: 75px;
+}
+
+/* Setting main */
+main {
+    .article {
+        max-width: 900px; // max-inline-size
+        margin: 0 auto; //  margin-inline
+        padding: 0 24px; // padding-inline
+        .header {
+            color: #f1f1f1;
+            .header__h1 {
+                @include typo.h1-settings;
+                @media screen and (max-width: 768px) {
+                    font-size: 2em;
+                }
+                @media screen and (max-width: 425px) {
+                    font-size: 1.2em;
+                }
+            }
+            .header__subtitle {
+                @include typo.p-settings;
+                margin-bottom: 30px; // margin-block-end
+                @media screen and (max-width: 425px) {
+                    font-size: 1em;
+                }
+            }
+        }
+        section {
+            .disclosure {
+                position: relative;
+                aspect-ratio: 1.38 / 1;
+                border: 5px solid #f1f1f1;
+                .disclosure__img-container {
+                    inline-size: 100%; // largeur
+                    block-size: 100%; // hauteur
+                    .disclosure__img {
+                        block-size: 100%; // hauteur
+                    }
+                }
+                .disclosure__img-container--2 {
+                    position: absolute;
+                    inline-size: 50%; // width
+                    top: 0;
+                    overflow: hidden;
+                }
+                .disclosure__widget {
+                    position: absolute;
+                    top: 0;
+                    inline-size: 100%; // largeur
+                    block-size: 100%; // hauteur
+                    .disclosure__line {
+                        position: absolute;
+                        inline-size: 3px; // largeur
+                        block-size: 100%; // hauteur
+                        left: calc(50% - 1.5px);
+                        background-color: #f1f1f1;
+                        pointer-events: none;
+                        .disclosure__line-circle {
+                            display: block;
+                            inline-size: 50px; // largeur
+                            block-size: 50px; // hauteur
+                            border: 2px solid #111;
+                            border-radius: 9999px;
+                            background-color: #f1f1f1;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .disclosure__line-circle-img {
+                                inline-size: 85%; // largeur
+                            }
+                        }
+                    }
+                    .disclosure__range {
+                        inline-size: 100%; // largeur
+                        block-size: 100%; // hauteur
+                        appearance: none;
+                        background: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,10 @@
+/* Setting CSS with SASS */
+/* Import Partials */
+/* import Font*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+/* Reset CSS */
 *,
 ::before,
 ::after {
@@ -6,9 +13,110 @@
   padding: 0;
 }
 
+/* Variables Font Fam */
+/* Variables Font Size */
+/* Variables Font Weight */
+/* Mixin Font */
+/* Mixin Font */
+/* Setting Body */
 body {
   font-family: DM sans, Helvetica, sans-serif;
   background-color: #111;
   padding-block-start: 75px;
 }
 
+/* Setting main */
+main .article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+main .article .header {
+  color: #f1f1f1;
+}
+main .article .header .header__h1 {
+  font-family: "Rajdhani";
+  font-size: 3em;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  main .article .header .header__h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .article .header .header__h1 {
+    font-size: 1.2em;
+  }
+}
+main .article .header .header__subtitle {
+  font-family: "DM Sans";
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 425px) {
+  main .article .header .header__subtitle {
+    font-size: 1em;
+  }
+}
+main .article section .disclosure {
+  position: relative;
+  aspect-ratio: 1.38/1;
+  border: 5px solid #f1f1f1;
+}
+main .article section .disclosure .disclosure__img-container {
+  inline-size: 100%;
+  block-size: 100%;
+}
+main .article section .disclosure .disclosure__img-container .disclosure__img {
+  block-size: 100%;
+}
+main .article section .disclosure .disclosure__img-container--2 {
+  position: absolute;
+  inline-size: 50%;
+  top: 0;
+  overflow: hidden;
+}
+main .article section .disclosure .disclosure__widget {
+  position: absolute;
+  top: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+main .article section .disclosure .disclosure__widget .disclosure__line {
+  position: absolute;
+  inline-size: 3px;
+  block-size: 100%;
+  left: calc(50% - 1.5px);
+  background-color: #f1f1f1;
+  pointer-events: none;
+}
+main .article section .disclosure .disclosure__widget .disclosure__line .disclosure__line-circle {
+  display: block;
+  inline-size: 50px;
+  block-size: 50px;
+  border: 2px solid #111;
+  border-radius: 9999px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .article section .disclosure .disclosure__widget .disclosure__line .disclosure__line-circle .disclosure__line-circle-img {
+  inline-size: 85%;
+}
+main .article section .disclosure .disclosure__widget .disclosure__range {
+  inline-size: 100%;
+  block-size: 100%;
+  appearance: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

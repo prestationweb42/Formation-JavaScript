@@ -1,0 +1,32 @@
+/* import Font*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+/* Variables Font Fam */
+$font-fam-h1: "Rajdhani";
+$font-fam-h2: "DM Sans";
+$font-fam-p: "DM Sans";
+
+/* Variables Font Size */
+$font-size-h1: 3em;
+$font-size-h2: 2.5em;
+$font-size-p: 1.2em;
+
+/* Variables Font Weight */
+$font-weight-400: 400;
+$font-weight-600: 600;
+
+
+/* Mixin Font */
+@mixin h1-settings{
+    font-family: $font-fam-h1;
+    font-size: $font-size-h1 ;
+    font-weight: $font-weight-600;
+}
+
+/* Mixin Font */
+@mixin p-settings{
+    font-family: $font-fam-p;
+    font-size: $font-size-p ;
+    font-weight: $font-weight-400;
+}
