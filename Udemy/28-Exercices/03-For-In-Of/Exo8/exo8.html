@@ -5,46 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="exo8.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
         <title>Exo 8</title>
     </head>
     <body>
-        <h1>Exo - 8 - Boucle For In - For Of</h1>
-        <h2>Ouvrir la console pour voir les tests</h2>
-        <img src="img/exo8.png" style="width: 60%" alt="" />
-        <a
-            href="exo8.js"
-            target="_blank"
-            style="font-size: 30px; display: block"
-            >Voir le code</a
-        >
-        <div class="resultat" style="color: red">
-            <h2>Afficher le résultat de l'exercice</h2>
-        </div>
-        <label>Saisir le nom à ajouter :</label>
-        <input type="text" id="nom" />
-        <button class="btn">Valider</button>
-        <div id="resultat"></div>
-        <script>
-            let noms = [];
-            const inputNom = document.querySelector("#nom");
-            const btn = document.querySelector(".btn");
-            const divResultat = document.querySelector("#resultat");
-
-            btn.addEventListener("click", function () {
-                noms.push(inputNom.value);
-                afficherNoms();
-                inputNom.value = null;
-            });
-
-            function afficherNoms() {
-                let list = "<ul>";
-                for (const nom of noms) {
-                    list += `<li>${nom}</li>`;
-                }
-                list += "</ul>";
-                divResultat.innerHTML = list;
-            }
-            //
-        </script>
+        <section class="base__container">
+            <h1>Formation JavaScript</h1>
+            <h2>Exo 8 - Boucle For In - For Of</h2>
+            <h3>Ouvrir la console pour voir les tests</h3>
+            <a href="exo8.js">Voir le fichier exo8.js</a>
+            <img src="img/exo8.png" alt="" />
+            <table>
+                <tr>
+                    <td><label>Saisir le nom à ajouter :</label></td>
+                    <td><input type="text" id="nom" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <button class="btn">Valider</button></td>
+                </tr>
+            </table>
+            <div class="resultat" style="color: red">
+                <h2>Afficher le résultat de l'exercice</h2>
+            </div>
+            
+        </section>
     </body>
 </html>
