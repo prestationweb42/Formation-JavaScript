@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Alkatra", cursive;
+}
+:root {
+    /* Color variables */
+    --main-red: #91283b;
+    --main-blue: #0065fc;
+    --bleu-nuit: #0f056b;
+    --lite-blue: #deebff;
+    --lite-gray: #f2f2f2;
+    --main-black: #000;
+    --main-white: #fff;
+
+    /* FONT */
+    --main-font: "Raleway", sans-serif;
+
+    /* Text color variables */
+    --color-primary: var(--main-black);
+    --color-secondary: var(--main-white);
+}
+.base__container {
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+.base__container h1,
+h2 {
+    text-align: center;
+}
+.base__container h1 {
+    font-size: 3em;
+    padding: 30px 0;
+    color: var(--main-blue);
+    background-color: rgb(240, 140, 11);
+}
+.base__container h2 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+.base__container a {
+    display: block;
+    font-size: 1.6em;
+    color: var(--main-red);
+    text-decoration: underline;
+}
+
+.base__container img{
+    inline-size: 100%;
+}
+
+.display_result {
+    inline-size: 60%;
+    block-size: 300px;
+    margin-inline: auto;
+    margin-block: 50px;
+    padding-inline: 30px;
+    padding-block: 30px;
+    border: 1px solid #000;
+}
+.display_result label{
+    inline-size: 50px;
+    font-size: 20px;
+    text-align: right;
+}
+.display_result #rayon{
+    font-size: 20px;
+    inline-size: 100%;
+}
+.display_result #perimetre{
+    font-size: 20px;
+    inline-size: 40px;
+}
+.display_result button{
+    font-size: 20px;
+    inline-size: 250px;
+}
+.display_result #resultat{
+    font-size: 30px;
+}
+
