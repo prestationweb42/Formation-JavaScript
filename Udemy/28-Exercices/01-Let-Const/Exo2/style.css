@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Alkatra", cursive;
+}
+:root {
+    /* Color variables */
+    --main-red: #91283b;
+    --main-blue: #0065fc;
+    --bleu-nuit: #0f056b;
+    --lite-blue: #deebff;
+    --lite-gray: #f2f2f2;
+    --main-black: #000;
+    --main-white: #fff;
+
+    /* FONT */
+    --main-font: "Raleway", sans-serif;
+
+    /* Text color variables */
+    --color-primary: var(--main-black);
+    --color-secondary: var(--main-white);
+}
+.base__container {
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+.base__container h1,
+h2 {
+    text-align: center;
+}
+.base__container h1 {
+    font-size: 3em;
+    padding: 30px 0;
+    color: var(--main-blue);
+    background-color: rgb(240, 140, 11);
+}
+.base__container h2 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+.base__container h2 span {
+    font-size: 1.3em;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+.base__container .link_back {
+    color: var(--bleu-nuit);
+    font-size: 2em;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.base__container a {
+    display: block;
+    font-size: 1.6em;
+    color: var(--main-red);
+    text-decoration: underline;
+}
+
+.base__container .exo2a, .exo2b {
+    margin-block-end: 80px;
+}
+.base__container .exo2a img, .exo2b img {
+    display: block;
+    inline-size: 80%;
+    margin-inline: auto;
+}
+
+.display_result {
+    inline-size: 50%;
+    block-size: 200px;
+    margin-inline: auto;
+    margin-block: 50px;
+    padding-inline: 30px;
+    padding-block: 30px;
+    border: 1px solid #000;
+}
+.display_result label{
+    font-size: 20px;
+}
+.display_result input{
+    font-size: 20px;
+}
+.display_result button{
+    font-size: 20px;
+    inline-size: 150px;
+}
+.display_result .resultat{
+    font-size: 30px;
+}
+
