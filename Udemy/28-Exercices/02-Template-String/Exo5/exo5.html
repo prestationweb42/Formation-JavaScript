@@ -5,20 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="exo5.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
         <title>Exo 4</title>
     </head>
     <body>
-        <h1>Exo - 5 - Template String</h1>
-        <h3>Ouvrir la console pour voir les tests</h3>
-        <img src="img/exo5.png" alt="" style="width: 70%" />
-        <br />
-        <label>Saisir le rayon</label>
-        <input type="number" id="rayon" />
-        <br />
-        <label>Perimètre : </label>
-        <input type="checkbox" id="perimetre" checked />
-        <button class="btn">Validez</button>
-        <button class="btn-raz">RAZ</button>
-        <div id="resultat"></div>
+        <section class="base__container">
+            <h1>Formation JavaScript</h1>
+            <h2>Exo - 5 - Template String</h2>
+            <h3>Ouvrir la console pour voir les tests</h3>
+            <a href="exo5.js">Voir le fichier exo5.js</a>
+            <img src="img/exo5.png" alt="" />
+            
+            <table>
+                <tr>
+                    <td><label>Saisir le rayon</label></td>
+                    <td><input type="number" id="rayon" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Perimètre : </label></td>
+                    <td><input type="checkbox" id="perimetre" checked /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn">Validez</button></td>
+                    <td><button class="btn-raz">RAZ</button></td>
+                </tr>
+            </table>
+            <div class="display_result"></div>
+        </section>
     </body>
 </html>

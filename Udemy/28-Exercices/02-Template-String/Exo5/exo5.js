@@ -1,5 +1,9 @@
+/**
+ * Template String
+ * Exo 5
+ */
 const nb = document.querySelector("#rayon");
-const divResultat = document.querySelector("#resultat");
+const divResultat = document.querySelector(".display_result");
 const perimetreCheckbox = document.querySelector("#perimetre");
 const valid = document.querySelector(".btn");
 const razBtn = document.querySelector(".btn-raz");
