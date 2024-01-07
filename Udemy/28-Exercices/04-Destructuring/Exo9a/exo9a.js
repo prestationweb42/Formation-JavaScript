@@ -1,4 +1,3 @@
-// alert("toto");
 // Exercice 9a - Destructuring sur un tableau
 const villes = [
     ["Paris", 48.85, 2.35],
@@ -40,7 +39,7 @@ function affichageCoordonnees2(ville) {
     -------${nom}-------
     Latitude : ${latitude},
     Longitude : ${longitude}`;
-    // console.log(affichage);
+    console.log(affichage);
     const baliseH3 = document.createElement("h3");
     baliseH3.innerText = `
     -------${nom}-------
