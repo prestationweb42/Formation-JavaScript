@@ -28,7 +28,7 @@
     --color-secondary: var(--main-white);
 }
 .base__container {
-    max-width: 100%;
+    max-width: 1200px;
     min-height: 90vh;
     margin: 0 auto;
 }
