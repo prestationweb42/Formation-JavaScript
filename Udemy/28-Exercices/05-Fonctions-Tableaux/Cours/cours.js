@@ -1,41 +1,45 @@
-// alert('toto')
-const divResultFor = document.querySelector(".resultFor");
-const divResultForIn = document.querySelector(".resultForIn");
-const divResultForInObj = document.querySelector(".resultForInObj");
-const divResultForOf = document.querySelector(".resultForOf");
-const tab = [10, 20, 30, 40];
-const objet = {
-    nom: "Dan",
-    age: 50,
-};
+/**
+ * 05 - Les fonctions sur les tableaux
+ * Le cours
+ */
+const notes = [5, 10, 15, 20];
+console.log(notes);
 
-// boucle for normale
-for (let i = 0; i < tab.length; i++) {
-    console.log(tab[i]);
-    const baliseH3 = document.createElement("h3");
-    divResultFor.appendChild(baliseH3);
-    baliseH3.innerHTML = `Position dans le tableau : ${i} -> ${tab[i]}`;
+// push -> Ajoute un OU plusieurs elements a la fin du tableau
+notes.push(23, 30);
+console.log(notes);
+
+// pop -> supprime un element a la fin du tableau
+notes.pop();
+console.log(notes);
+
+// fonction map -> voir pdf du cours
+const notes2 = notes.map(note => {
+    return note * 10;
+});
+console.log(notes2);
+
+// fonction findIndex() -> affiche l'index d'un element du tableau
+const index = notes2.findIndex(note => {
+    return note === 150;
+});
+console.log(index);
+
+// fonction find() -> affiche la valeur d'un tableau dans un tableau
+const persos = [
+    ["Tina", 5, 10, 15, 20],
+    ["Kelly", 5, 10, 15, 20],
+    ["Jennifer", 5, 10, 15, 20],
+];
+const valeur = persos.find(perso => {
+    return perso[0] === "Jennifer";
+});
+console.log(valeur);
+
+// fonction moderne -> entries() avec for of et le destructuring
+for (let [indice, note] of notes.entries()) {
+    console.log(`Note = ${indice}, ${note}`);
 }
 
-// boucle for in avec un tableau
-for (let i in tab) {
-    console.log(tab[i]);
-    const baliseH3 = document.createElement("h3");
-    divResultForIn.appendChild(baliseH3);
-    baliseH3.innerHTML = `Position dans le tableau : ${i} -> ${tab[i]}`;
-}
-// boucle for in avec un objet
-for (let i in objet) {
-    console.log(objet[i]);
-    const baliseH3 = document.createElement("h3");
-    divResultForInObj.appendChild(baliseH3);
-    baliseH3.innerHTML = `Position dans l'objet : ${i} -> ${objet[i]}`;
-}
-
-// boucle for of
-for (let value of tab) {
-    console.log(value);
-    const baliseH3 = document.createElement("h3");
-    divResultForOf.appendChild(baliseH3);
-    baliseH3.innerHTML = `Valeur dans le tableau : ${value}`;
-}
+// fonction include() -> teste la présence d'un élément et renvoi true ou false
+console.log(notes.includes(10));

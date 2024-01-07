@@ -28,13 +28,12 @@
     --color-secondary: var(--main-white);
 }
 .base__container {
-    max-inline-size: 1200px;
-    min-block-size: 90vh;
-    margin-inline: auto;
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
 }
 .base__container h1,
-h2,
-h3 {
+h2, h3 {
     text-align: center;
 }
 .base__container h1 {
@@ -52,12 +51,14 @@ h3 {
     padding: 20px 0;
 }
 .base__container a {
-    font-size: 1.6em;
+    font-size: 2em;
     color: var(--main-red);
     text-decoration: underline;
     margin-left: 30px;
 }
-.memory_content {
-    width: 50%;
-    margin: 0 auto;
+.base__container .link_back {
+    color: var(--bleu-nuit);
+    font-size: 2em;
+    padding: 20px 0;
+    text-decoration: none;
 }
