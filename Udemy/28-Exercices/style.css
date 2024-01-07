@@ -63,10 +63,7 @@ h2, h3 {
 }
 
 .base__container a {
-    font-size: 1.6em;
+    font-size: 2em;
     color: var(--main-red);
     text-decoration: underline;
-}
-.base__container p {
-    font-size: 1.7em;
 }
