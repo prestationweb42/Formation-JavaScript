@@ -13,7 +13,7 @@ console.log(notes);
 notes.pop();
 console.log(notes);
 
-// fonction map -> voir pdf du cours
+// fonction map -> créer un nouveau tableau tableau à partir d'un tableau existant
 const notes2 = notes.map(note => {
     return note * 10;
 });
