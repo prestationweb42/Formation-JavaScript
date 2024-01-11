@@ -33,7 +33,8 @@
     margin: 0 auto;
 }
 .base__container h1,
-h2, h3 {
+h2,
+h3 {
     text-align: center;
 }
 .base__container h1 {
@@ -56,9 +57,23 @@ h2, h3 {
     text-decoration: underline;
     margin-left: 30px;
 }
+.base__container img {
+    inline-size: 100%;
+}
 .base__container .link_back {
     color: var(--bleu-nuit);
     font-size: 2em;
     padding: 20px 0;
     text-decoration: none;
+}
+
+/* Display Results */
+.resultat {
+    inline-size: 60%;
+    min-block-size: 300px;
+    margin-inline: auto;
+    margin-block-start: 30px;
+    padding-inline: 30px;
+    padding-block: 30px;
+    border: 1px solid #000;
 }
