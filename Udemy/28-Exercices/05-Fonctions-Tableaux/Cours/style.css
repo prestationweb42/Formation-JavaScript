@@ -57,6 +57,13 @@ h3 {
     text-decoration: underline;
     margin-left: 30px;
 }
+.base__container .link_back {
+    color: var(--bleu-nuit);
+    font-size: 2em;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
 .memory_content {
     width: 50%;
     margin: 0 auto;
