@@ -1,41 +1,36 @@
-// alert('toto')
-const divResultFor = document.querySelector(".resultFor");
-const divResultForIn = document.querySelector(".resultForIn");
-const divResultForInObj = document.querySelector(".resultForInObj");
-const divResultForOf = document.querySelector(".resultForOf");
-const tab = [10, 20, 30, 40];
-const objet = {
-    nom: "Dan",
-    age: 50,
-};
+/**
+ * 06 - Paramètres sur les fonctions
+ * Définir des valeurs par défaut
+ * Le cours avec un exemple avec 2 taux de TVA + remise
+ */
 
-// boucle for normale
-for (let i = 0; i < tab.length; i++) {
-    console.log(tab[i]);
-    const baliseH3 = document.createElement("h3");
-    divResultFor.appendChild(baliseH3);
-    baliseH3.innerHTML = `Position dans le tableau : ${i} -> ${tab[i]}`;
+// prix du produit HT
+let montantHT = 10;
+
+// avec un taux par defaut de 20% - pas besoin de renseigner le taux car déjà dans la fonction
+let montantTTC20 = calculPrixTTC(montantHT);
+console.log(montantTTC20);
+
+// OU avec un taux different de 20% mais cette fois il faut renseigner le parametre avec le taux voulu
+let montantTTC5 = calculPrixTTC(montantHT, 5);
+console.log(montantTTC5);
+
+// fonction calcul avec un taux par défaut de 20%
+// si on veut ajouter une remise dans le calcul et si on considère qu'elle est moins prioritaire que le taux, elle se située le plus à droite
+function calculPrixTTC(montant, taux = 20) {
+    return montant + (montant * taux) / 100;
 }
 
-// boucle for in avec un tableau
-for (let i in tab) {
-    console.log(tab[i]);
-    const baliseH3 = document.createElement("h3");
-    divResultForIn.appendChild(baliseH3);
-    baliseH3.innerHTML = `Position dans le tableau : ${i} -> ${tab[i]}`;
-}
-// boucle for in avec un objet
-for (let i in objet) {
-    console.log(objet[i]);
-    const baliseH3 = document.createElement("h3");
-    divResultForInObj.appendChild(baliseH3);
-    baliseH3.innerHTML = `Position dans l'objet : ${i} -> ${objet[i]}`;
-}
+// Avec remise
+let bonnet = 15;
+// le calcul du prix se fait avec taux et une remise par défaut
+console.log(calculPrixTTCRemise(bonnet));
+// si les paramètres doivent changer, il faut les indiquer dans l'appel de la fonction
+console.log(calculPrixTTCRemise(bonnet,5,2));
 
-// boucle for of
-for (let value of tab) {
-    console.log(value);
-    const baliseH3 = document.createElement("h3");
-    divResultForOf.appendChild(baliseH3);
-    baliseH3.innerHTML = `Valeur dans le tableau : ${value}`;
+
+// si on veut ajouter une remise dans le calcul et si on considère qu'elle est moins prioritaire que le taux, elle doit se située le plus à droite
+function calculPrixTTCRemise(montant, taux = 20, remise = 1) {
+    let montantTTC = montant + (montant * taux) / 100;
+    return montantTTC - (montantTTC * remise) / 100;
 }
