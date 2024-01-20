@@ -2,6 +2,9 @@
  * QUIZZ JAVASCRIPT
  * ARRAY
  * STRING
+ * NUMBER
+ * MATH
+ * OBJECT
  */
 let score = 0;
 const btnStartQuizz = document.getElementById("btn_start_quizz");
@@ -75,7 +78,9 @@ function loopList(listMethod, listDefinition) {
         let numRandom = Math.floor(Math.random() * listMethod.length);
         let userWord = prompt(
             `
-            ----------------- Question ${i + 1} ------------------
+            ----------------- Question ${i + 1} / ${
+                listMethod.length
+            } ------------------
             ${listDefinition[i]}
             ${listMethod[i + numRandom + 1]}
             ${listMethod[i + numRandom + 4]}
