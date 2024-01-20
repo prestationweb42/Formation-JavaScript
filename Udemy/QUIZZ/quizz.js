@@ -59,7 +59,8 @@ function userChoice() {
         userChoice !== "String" &&
         userChoice !== "Math" &&
         userChoice !== "Objet" &&
-        userChoice !== "Number"
+        userChoice !== "Number" &&
+        userChoice !== null // Annuler
     ) {
         userChoice = prompt(
             "Faites votre choix entre Array, String, Math, Number ou Objet"
@@ -81,6 +82,11 @@ function loopList(listMethod, listDefinition) {
             ${listMethod[i]}
             `
         );
+        // Escape Loop
+        if (userWord === null) {
+            break; // Sortir de la boucle
+        }
+        // Continu
         if (userWord === listMethod[i]) {
             score++;
         }
