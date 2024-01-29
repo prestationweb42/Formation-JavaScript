@@ -1,0 +1,189 @@
+/********************
+Style Vertical Marquee
+*********************/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #f1f1f1;
+    --text-color: #111;
+    --text-color-darker: #333;
+    --border-contrast: #111;
+    --quotes-contrast: #111;
+    --blurred-circle: #fff;
+
+    /* Radioactive green */
+    --background: #111;
+    --border-contrast: #2fe21f5f;
+    --text-color: #fff;
+    --text-color-darker: #f1f1f1;
+    --quotes-contrast: greenyellow;
+    --blurred-circle: #9fffb54d;
+
+    /* Light classic */
+    /* 
+    --background: #f1f1f1;
+    --text-color: #111;
+    --text-color-darker: #333;
+    --border-contrast: #111;
+    --quotes-contrast:  #111; 
+    --blurred-circle: #fff;
+    */
+}
+
+body {
+    font-family: Inter, Helvetica, sans-serif;
+    background-color: var(--background);
+    padding-top: 70px;
+}
+
+/* Setting testimonials_section */
+.testimonials_section {
+  padding: 0 12px;
+}
+@media screen and (max-width: 430px) {
+  .testimonials_section {
+    padding: 0;
+  }
+}
+
+/* Setting vertical_marquee */
+.vertical_marquee {
+    position: relative;
+    max-inline-size: 950px;
+    block-size: 650px;
+    margin-inline: auto;
+    padding: 0 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+@media screen and (max-width: 320px) {
+    .vertical_marquee {
+        padding: 0 5px;
+    }
+}
+
+/* Setting vertical-marquee__blurred-circle */
+.vertical-marquee__blurred-circle {
+    display: block;
+    inline-size: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--blurred-circle);
+    filter: blur(64px);
+}
+
+/* Setting vertical-marquee__blurred */
+.vertical-marquee__blurred {
+    position: absolute;
+    inline-size: 100%;
+    z-index: 1;
+}
+/* Top */
+.vertical-marquee__blurred--top {
+    top: 0;
+    box-shadow: 0 10px 30px 30px var(--background);
+}
+/* Bottom */
+.vertical-marquee__blurred--bottom {
+    bottom: 0;
+    box-shadow: 0 -10px 30px 30px var(--background);
+}
+
+/* Setting Animation Slider */
+.vertical-marquee__slider {
+    animation: vertical_marquee;
+    animation-duration: 20.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes vertical_marquee {
+    to {
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width: 831px) {
+    .vertical-marquee__slider {
+        animation-duration: 30.4s;
+    }
+}
+@media screen and (max-width: 500px) {
+    .vertical-marquee__slider {
+        animation-duration: 40.4s;
+    }
+}
+
+/* Setting Grid  Card Panel */
+.vertical-marquee__panel {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding-block: 12px;
+    padding-inline: 22px;
+}
+/* .vertical-marquee__panel-1{
+  background-color: rgb(73, 104, 132);
+}
+.vertical-marquee__panel-2{
+  background-color: rgb(68, 118, 90);
+} */
+@media screen and (max-width: 500px) {
+    .vertical-marquee__panel {
+        padding: 0 2px;
+    }
+}
+
+/* Setting Card */
+.vertical-marquee__card {
+    padding-block: 20px;
+    padding-inline: 22px;
+    border: 2px solid var(--border-contrast);
+    border-radius: 10px;
+}
+@media screen and (max-width: 450px) {
+    .vertical-marquee__card  {
+        inline-size: 95%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .vertical-marquee__card  {
+        inline-size: 300px;
+    }
+}
+.vertical-marquee__card-text {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--text-color);
+    margin-block-end: 24px;
+}
+@media screen and (max-width: 500px) {
+    .vertical-marquee__card-text {
+        font-size: 16px;
+    }
+}
+
+.vertical-marquee__green-quotes {
+    font-size: 24px;
+    color: var(--quotes-contrast);
+}
+.vertical-marquee__card-author {
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    font-style: italic;
+    color: var(--text-color-darker);
+}
+@media screen and (max-width: 500px) {
+    .vertical-marquee__card-author {
+        font-size: 15px;
+    }
+}
